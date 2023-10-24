@@ -1,0 +1,6 @@
+Colores utilizados:
+- #000000
+- #0000FF
+- #DEB887
+- #FFF8DC
+

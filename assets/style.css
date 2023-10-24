@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #0000FF;
+    --tertiary-color: #DEB887;
+    --quaternary-color: #FFF8DC;
+}
+
+header {
+    height: 10vh;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.5rem;
+}
+
+.afree {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border-radius: 1rem;
+}
+
+main {
+    min-height: 80vh;
+    background-color: var(--quaternary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteiner1 {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+section {
+    background-color: var(--tertiary-color);
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 1rem var(--primary-color);
+}
+
+.imgCourses {
+    width: 15vw;
+    height: 25vh;
+}
+
+.conteiner2 {
+    width: 60%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    font-size:medium;
+}
+
+.titleul{
+    margin-left: 1.2rem;
+}
+tr,
+th,
+td {
+    text-align: left;
+    border: 1px solid var(--tertiary-color);
+    border-collapse: separate;
+    padding: 0.2rem;
+}
+
+th {
+    background-color: var(--tertiary-color);
+}
+
+h2,
+h3 {
+    justify-content: center;
+}
+
+
+
+li {
+    color: var(--secondary-color);
+    padding: 0.2rem;
+    margin-right: 2rem;
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+button{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--quaternary-color);
+    border-radius:10px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width:1023px) {
+    header {
+        flex-direction: column;
+        height: 35vh;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        width: 60%;
+        height: 50%;
+    }
+
+    .conteiner1, .conteiner2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .imgCourses{
+        width: 50%;
+        object-fit: cover;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        height:30vh;
+    }
+}
